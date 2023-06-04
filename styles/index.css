@@ -1,0 +1,156 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background: hsl(217, 54%, 11%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  max-width: 330px;
+  height: 540px;
+  background:hsl(216, 50%, 16%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 10px;
+  /* box-shadow: 0 0 40px hsla(229, 55%, 6%, 0.2); */
+  
+}
+.main-image {
+  width: 290px;
+  height: 275px;
+  background-image: url(../images/image-equilibrium.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  margin-bottom: 1.2rem;
+  cursor: pointer;
+  
+  
+  
+}
+
+
+.main-image:hover .overlay{
+  width: 100%;
+  height: 100%;
+  background-color: hsla(178, 100%, 50%, 0.5);
+  background-image: url(../images/icon-view.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+ 
+}
+
+.info-section {
+  height: 40%;
+}
+.info-section h1 {
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+.info-section h1:hover {
+  color: hsl(178, 100%, 50%);
+}
+.info-section > p {
+  color: hsla(215, 52%, 70%, 0.5);
+  font-size: 0.9rem;
+  margin: 1rem 0 1.5rem 0;
+}
+.time-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 1.7rem;
+}
+
+.ETH {
+  height: inherit;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex: 1;
+  flex-wrap: wrap;
+}
+.ETH img, .time img {
+  margin-right: 0.4rem;
+}
+.ETH p {
+  font-size: 0.75rem;
+  color: hsl(178, 100%, 50%);
+}
+.time {
+  height: inherit;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex: 1;
+  flex-wrap: wrap;
+}
+.time p {
+  font-size: 0.75rem;
+  color: hsla(215, 52%, 70%, 0.5);
+}
+
+hr {
+  margin-top: 1rem;
+  border-color: rgba(255, 255, 255, 0.15);
+}
+.profile {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+
+}
+.profile img {
+  width: 1.7rem;
+  border: 1px solid white;
+  border-radius: 100%;
+  margin-right: 1rem;
+}
+.profile p {
+  font-size: 0.8rem;
+  color: hsla(215, 52%, 70%, 0.5);
+}
+.profile p span {
+  color: white;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+.profile p span:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.attribution {
+  text-align: center;
+  background-color: rgb(184, 184, 184);
+  color:black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 3vh;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 80%;
+}
+.attribution a {
+  font-size: 100%;
+  margin-left: 0.5rem;
+  color: hsl(228, 45%, 44%);
+}
